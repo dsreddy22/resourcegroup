@@ -4,8 +4,8 @@ variable "resource_group" {
   default = "webapptest1"
 }
 variable "webapps" {
-  type = "list"
-  default = ["webapp1","webapp2","webapp3"]
+  type = "string"
+  default = "webapp1"
 }
 variable "location" {
   type = "string"
@@ -72,9 +72,5 @@ variable "connect_string_secret" {
   description = "The password for the Connection String"
   default = ""
 }
-module "random_name" {
-  source = "git::https://github.optum.com/CommercialCloud-EAC/terraform_common.git//terraform_module/random_name"
-}
-
 
 
