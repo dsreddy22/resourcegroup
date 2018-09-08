@@ -19,6 +19,6 @@ resource "azurerm_app_service" "test" {
 
   site_config {
     dotnet_framework_version = "${var.dotnet_frame_version}"
-    scm_type                 = "${var.scm_type}"
+    scm_type                 = "${var.scmgmt_type}"
 }
 }
