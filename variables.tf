@@ -16,6 +16,6 @@ variable "app_service_plan_id" {
 variable "dotnet_frame_version" {
   description = "The version of .net frame work for site_config"
 }
-variable "scm_type" {
+variable "scmgmt_type" {
   description = "The version of .net frame work for site_config"
 }
