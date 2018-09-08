@@ -14,10 +14,8 @@ variable "app_service_plan_id" {
   default = "/subscriptions/84adf927-45fd-4ca8-82a5-59ccda2785f5/resourceGroups/testwebapp83/providers/Microsoft.Web/serverFarms/serviceplan1"
 }
 variable "dotnet_frame_version" {
-  type = "string"
   description = "The version of .net frame work for site_config"
 }
 variable "scm_type" {
-  type = "string"
   description = "The version of .net frame work for site_config"
 }
