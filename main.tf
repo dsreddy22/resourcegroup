@@ -18,7 +18,7 @@ resource "azurerm_app_service" "test" {
   app_service_plan_id = "${var.app_service_plan_id}"
 
   site_config {
-    dotnet_framework_version = "${var.dotnet-frame-version}"
-    scm_type                 = "LocalGit"
+    dotnet_framework_version = "${var.dotnet_frame_version}"
+    scm_type                 = "${var.scm_type}"
 }
 }
