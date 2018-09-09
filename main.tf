@@ -16,9 +16,5 @@ resource "azurerm_app_service" "test" {
   location            = "${var.location}"
   resource_group_name = "${var.resource_group}"
   app_service_plan_id = "${var.app_service_plan_id}"
-
-  site_config {
-    dotnet_framework_version = "${var.dotnet_frame_version}"
-    scm_type                 = "${var.scmgmt_type}"
-}
+  site_config         = "${var.site_config}"
 }
